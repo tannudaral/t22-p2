@@ -1,0 +1,317 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+ul {
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 96%;
+  margin-right: 0;
+  padding-right: 0;
+  transform: translate(-50%, -50%);
+}
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 70px;
+  height: 70px;
+  background-color: #ebaeae;
+  text-align: center;
+  font-size: 40px;
+  line-height: 70px;
+  margin: 0 0px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+ul li a .fa {
+  position: relative;
+  /*  bottom:25px; */
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+ul li a:hover .fa {
+  color: #ffffff;
+  transform: rotateY(360deg);
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a {
+  background-color: rgb(91, 175, 253);
+}
+ul li:nth-child(2) a {
+  background-color: #99d5f8e7;
+}
+ul li:nth-child(3) a {
+  background-color: rgb(252, 101, 101);
+}
+ul li:nth-child(4) a {
+  background-color: rgb(253, 166, 139);
+}
+ul li:nth-child(1) a:before {
+  background-color: #3b5999;
+}
+
+ul li:nth-child(2) a:before {
+  background-color: #55acee;
+}
+
+ul li:nth-child(3) a:before {
+  background-color: #cd201f;
+}
+
+ul li:nth-child(4) a:before {
+  background-color: #dd4b39;
+}
+
+ul li:nth-child(5) a:before {
+  background-color: #0077b5;
+}
+
+ul li:nth-child(6) a:before {
+  background-color: #e4405f;
+}
+
+ul li:nth-child(7) a:before {
+  background-color: #25d366;
+}
+
+ul li:nth-child(8) a:before {
+  background-color: hsl(196, 100%, 47%);
+}
+
+ul li:nth-child(9) a:before {
+  background-color: #34465d;
+}
+
+ul li:nth-child(10) a:before {
+  background-color: #fffc00;
+}
+
+@media screen and (max-width: 991px) {
+  ul {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 95%;
+    margin-right: 0;
+    padding-right: 0;
+    transform: translate(-50%, -50%);
+  }
+  ul li a {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  ul {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 93%;
+    margin-right: 0;
+    padding-right: 0;
+    transform: translate(-50%, -50%);
+  }
+  ul li a {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  ul {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 90%;
+    margin-right: 0;
+    padding-right: 0;
+    transform: translate(-50%, -50%);
+  }
+  ul li a {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  ul {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 88%;
+    margin-right: 0;
+    padding-right: 0;
+    transform: translate(-50%, -50%);
+  }
+  ul li a {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  ul {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 88%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  ul li a {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+ul,
+li,
+ol {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+a:focus,
+a:hover {
+  text-decoration: none;
+  outline: 0px;
+}
+footer {
+  background: url(https://image.ibb.co/kr5tmV/stage.png) no-repeat center center;
+  position: fixed;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  min-height: 350px;
+}
+.speakerL {
+  position: absolute;
+  left: 10%;
+  bottom: 250px;
+  z-index: 5;
+}
+
+.speakerR {
+  position: absolute;
+  right: 10%;
+  bottom: 250px;
+  z-index: 5;
+}
+.crowd {
+  position: absolute;
+  bottom: 0;
+  z-index: 9999;
+}
+.crwd1 {
+  left: 10px;
+}
+.crwd2 {
+  left: 120px;
+}
+.crwd3 {
+  left: 240px;
+}
+.crwd4 {
+  left: 400px;
+}
+.crwd5 {
+  left: 550px;
+}
+.crwd6 {
+  left: 600px;
+}
+.crwd7 {
+  left: 700px;
+}
+.crwd8 {
+  left: 850px;
+}
+.crwd9 {
+  left: 1000px;
+}
+.crwd10 {
+  left: 1150px;
+}
+.crwd11 {
+  left: 1350px;
+}
+.crwd12 {
+  left: 1500px;
+}
+.crwd13 {
+  left: 1600px;
+}
+.crwd14 {
+  left: 1800px;
+}
+.psy {
+  background: url(https://image.ibb.co/kRoDmV/psy.png) no-repeat;
+  width: 225px;
+  height: 400px;
+  position: fixed;
+  left: 50%;
+  margin-left: -91px;
+  bottom: 160px;
+  z-index: 99;
+}
+.guitar-player {
+  position: fixed;
+  left: 25%;
+  bottom: 220px;
+  z-index: 9;
+  width: 155px;
+  display: none;
+}
+
+.guitar-player img,
+.drummer-player img,
+.drummer-player2 img {
+  width: 100%;
+}
